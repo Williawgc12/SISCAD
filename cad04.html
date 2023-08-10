@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylecheet" href="style.css">
+    <meta charset="utf-8">
+
+    <title>SISCAD</title>
+
+    <!--Colocando um icone-->
+    <link rel="icon" href="imagem/officedatabase_104402.ico">
+
+
+
+    <!--Link Boostrap CSS e JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--Link Icons Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        input {
+            width: 100px;
+        }
+
+        body {
+           
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+
+<body style="background-image: url(imagem/imgCBblue.jpg);">
+
+    <center>
+        <CENTER>
+            <div style="margin-top: -10px;background-color: rgb(5, 79, 190);height:100px;">
+                <h3 style="color: #FFF;">
+                    <br>
+                    <a href="pagina_ini.html" style="text-decoration: none;margin-left:-700px;color: #FFF;margin-top:20px;"><i style="margin-top: -40px;" class="bi bi-arrow-left-circle"></i></a>
+                    <p
+                        style="margin-top: -35px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                        CADASTRO DE PESSOAL/ITEM 01</p>
+                </h3>
+            </div>
+
+        </CENTER>
+    </center>
+     <!--Paginas para cadastro de SGt e oficiais tmporarios-->
+     <!--Paginas para cadastro de SGt e oficiais tmporarios-->
+
+  <br>
+  <br>
+
+    <center>
+        <form method="POST" action="insere04.php" id="formCad"
+            style="background-color: rgb(5, 79, 190);width: 760px; height: 900px;border-radius: 20px;margin-left: -20px;">
+            <!--form 01-->
+            <br>
+            <div style="margin-left: -400px;">
+                <div class="form-group">
+                    <label id="lname" style="color: #FFF;">
+                        NOME:
+                    </label>
+                    <input style="width: 300px;" type="text" class="form-control" name="nome"
+                        placeholder="Digite o nome">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label id="lidade" style="color: #FFF;">
+                        IDADE:
+                    </label>
+                    <input style="width: 300px;" type="text" class="form-control" name="idade"
+                        placeholder="Digite a idade">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label id="lemail" style="color: #FFF;">
+                        EMAIL:
+                    </label>
+                    <input style="width: 300px;" type="email" class="form-control" name="email"
+                        placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label id="ltele" style="color: #FFF;">
+                        TELEFONE PESSOAL:
+                    </label>
+                    <input style="width: 300px;" type="text" class="form-control" name="contato"
+                        placeholder="(00) 0000-00000">
+                </div>
+                <br>
+            </div>
+            <!--form 02-->
+            <div style="margin-left: 300px;margin-top:-417px;">
+                <div class="form-group">
+                    <label style="color: #FFF;">
+                        TELEFONE SECUNDÁRIO
+                    </label>
+                    <input type="text" style="width: 300px;" class="form-control" name="contatoSec"
+                        placeholder="(00) 0000-00000">
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;">
+                        ENDEREÇO:
+                    </label>
+                    <input type="tel" style="width: 300px;" name="endereco" class="form-control"
+                        placeholder="Digite o endereço">
+                </div>
+                <div class="form-group">
+                    <label style="color: #FFF;">
+                        ESCOLARIDADE:
+                    </label>
+                    <select class="form-control" name="escolaridade" style="width: 300px;">
+                        <option>SELECIONE:</option>
+                        <option>ENSINO FUNDAMENTAL - Incompleto</option>
+                        <option>ENSINO FUNDAMENTAL - Completo </option>
+                        <option> ENSINO MÉDIO - Incompleto</option>
+                        <option> ENSINO MÉDIO - Completo</option>
+                        <option> ENSINO TÉCNICO</option>
+                        <option>ENSINO SUPERIOR - Incompleto</option>
+                        <option>ENSINO SUPERIOR - Completo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group" style="margin-left: -400px;margin-top: 150px;">
+
+                    <label style="color: #fff;">
+                        CPF:
+                    </label>
+                    <input type="number" style="width: 300px;" name="cpf" class="form-control"
+                        placeholder="Digite o cpf" maxlength="11px">
+                </div>
+            </div>
+
+            <!--form04-->
+            <div id="form03" style="margin-top:-200px;margin-left:310px;">
+                <div class="form-group">
+                    <label style="color: #fff;">
+                        NOME DO PAI:
+                    </label>
+                    <input type="text" style="width: 300px;" name="nome_pai" class="form-control"
+                        placeholder="Digite o endereço" maxlength="30">
+                </div>
+                <div class="form-group">
+
+                    <label style="color: #fff;">
+                        NOME DA MÃE:
+                    </label>
+                    <input type="text" style="width: 300px;" name="nome_mae" class="form-control"
+                        placeholder="Digite o endereço" maxlength="30" >
+                </div>
+            </div>
+
+            <!--form04-->
+            <div id="form03" style="margin-top:40px;margin-left:310px;">
+                <div class="form-group">
+                    <label style="color: #fff;">
+                        NATURALIDADE:
+                    </label>
+                    <input type="text" style="width: 300px;" name="naturalidade" class="form-control"
+                        placeholder="Digite o endereço" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label style="color: #fff;">
+                       UF:
+                    </label>
+                    <select class="form-control" name="uf" style="width: 90px;">
+                        <option>UF</option>
+                        <option>SP </option>
+                        <option>RJ </option>
+                        <option>PR </option>
+                        <option>PE </option>
+                        <option>RS </option>
+                        <option>RN </option>
+                        <option>AM </option>
+                        <option>RR </option>
+                        <option>RO </option>
+                        <option>SC </option>
+                        <option>MG </option>
+                        <option>ES </option>
+                        <option>AC </option>
+                        <option>PA </option>
+                        <option>AP </option>
+                        <option>DF</option>
+                        <option>GO</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>BA</option>
+                        <option>SE</option>
+                        <option>AL</option>
+                        <option>PB</option>
+                        <option>CE</option>
+                        <option>PI</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+
+                    <label style="color: #fff;">
+                       ESPECIALIZAÇÃO:
+                    </label>
+                    <select style="width: 300px;" class="form-control" name="especialidade">
+                        <option>Especialidade</option>
+                        <option>Nenhuma Especialidade</option>
+                        <option>Administrador</option>
+                        <option>Informática</option>
+                        <option>Contabilidade</option>
+                        <option>Enfermagem</option>
+                        <option>Mecanica</option>
+                        <option>Eletrotécnica</option>
+                        <option>Eletromecanica</option>
+                        <option>Eletronica</option>   
+                    </select>
+                </div>
+            </div>
+
+            <div style="margin-left: 80px;">
+                <div id="btn" style="margin-top: 100px; margin-left: -70px;">
+                    <button class="btn btn-primary">CADASTRAR</button>
+                    <a href="list_04.php" class="btn btn-secondary" type="submit">VER LISTA <i class="bi bi-table"></i></a>
+                </div>    
+            </div>
+            
+
+        </form>
+
+    </center>
+
+    <center>
+        <div style="background-color: rgb(5, 79, 190);width:1750px;height:150px;margin-top: 150px;margin-left:-50px;">
+
+            <hr style="background-color: #FFF;margin-top: 300px;">
+            <center>
+                <div style="margin-top: 95px;margin-left:-240px;">
+                  
+                </div>
+
+            </center>
+        </div>
+    </center>
+
+
+
+</body>
+
+</html>
